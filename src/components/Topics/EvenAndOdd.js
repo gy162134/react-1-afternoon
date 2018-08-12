@@ -38,7 +38,7 @@ render(){
         <div className="puzzleBox evenAndOddPB">
             <h4>Evens and Odds</h4>
             <input className="inputLine" onChange={ (e) => this.handleChange(e.target.value) }></input>
-            <button className="confirmationButton" onClick={() => this.doTheMath(this.state.userInput)}></button>
+            <button className="confirmationButton" onClick={() => this.doTheMath(this.state.userInput)}>Sort!!</button>
             <span className="resultsBox">Evens: {this.state.evenArray.join(", ")}</span>
             <span className="resultsBox">Odds: {this.state.oddArray.join(", " )}</span>
             

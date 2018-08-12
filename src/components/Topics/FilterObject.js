@@ -53,7 +53,7 @@ filterObj(e){
             <h4>Filter Object</h4>
             <span className="puzzleText">Original: {JSON.stringify(this.state.unFilteredArray, null, 10)}</span>
             <input className="inputLine" onChange={(e) => this.handleChange(e.target.value)}></input>
-            <button className="confirmationButton" onClick={() => this.filterObj(this.state.userInput)}></button>
+            <button className="confirmationButton" onClick={() => this.filterObj(this.state.userInput)}>Filter!!</button>
             <span className="resultsBox filterObjectRB">{JSON.stringify(this.state.filteredArray, null, 10)}</span>
         </div>
         )
